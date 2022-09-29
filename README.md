@@ -1,38 +1,3 @@
-![MACAD-Gym learning environment 1](docs/images/macad-gym-urban_4way_intrx_2c1p1m.png)
-[MACAD-Gym](https://arxiv.org/abs/1911.04175) is a training platform for Multi-Agent Connected Autonomous
- Driving (MACAD) built on top of the CARLA Autonomous Driving simulator.
-
-MACAD-Gym provides OpenAI Gym-compatible learning environments for various
-driving scenarios for training Deep RL algorithms in homogeneous/heterogenous,
-communicating/non-communicating and other multi-agent settings. New environments and scenarios
- can be easily added using a simple, JSON-like configuration.
-
-[![PyPI version fury.io](https://badge.fury.io/py/macad-gym.svg)](https://pypi.python.org/pypi/macad-gym/)
-[![PyPI format](https://img.shields.io/pypi/pyversions/macad-gym.svg)](https://pypi.python.org/pypi/macad-gym/)
-[![Downloads](https://pepy.tech/badge/macad-gym)](https://pepy.tech/project/macad-gym)
-### Quick Start
-
-Install MACAD-Gym using `pip install macad-gym`.
- If you have CARLA installed, you can get going using the following 3 lines of code. If not, follow the
-[Getting started steps](#getting-started).
-
-```python
-import gym
-import macad_gym
-env = gym.make("HomoNcomIndePOIntrxMASS3CTWN3-v0")
-
-# Your agent code here
-```
-
- Any RL library that supports the OpenAI-Gym API can be used to train agents in MACAD-Gym. The [MACAD-Agents](https://github.com/praveen-palanisamy/macad-agents) repository provides sample agents as a starter.
-
-### Usage guide
-
-1. [Getting Started](#getting-started)
-1. [Learning platform & agent interface](#learning-platform-and-agent-interface)
-1. [Citing MACAD-Gym](#citing)
-1. [Developer Contribution Guide](CONTRIBUTING.md)
-
 ### Getting Started
 
 > Assumes an Ubuntu (16.04/18.04 or later) system.
